@@ -186,6 +186,16 @@ bool UrDriver::writeKeepalive()
   return false;
 }
 
+bool UrDriver::writeFreedrive()
+{
+  if (reverse_interface_active_)
+  {
+    vector6d_t* fake = nullptr;
+    return reverse_interface_->write(fake, comm::ControlMode::MODE_FREEDRIVE);
+  }
+  return false;
+}
+
 void UrDriver::startRTDECommunication()
 {
   rtde_client_->start();

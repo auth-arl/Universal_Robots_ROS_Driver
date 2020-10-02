@@ -139,6 +139,14 @@ public:
   bool writeKeepalive();
 
   /*!
+   * \brief Write a freedrive signal.
+   *
+   * \returns True on successful write.
+   */
+  bool writeFreedrive();
+
+
+  /*!
    * \brief Starts the RTDE communication.
    *
    * After initialization, the cyclic RTDE communication is not started automatically, so that data
