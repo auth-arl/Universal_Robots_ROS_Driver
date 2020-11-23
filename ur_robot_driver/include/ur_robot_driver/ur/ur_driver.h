@@ -34,6 +34,7 @@
 #include "ur_robot_driver/ur/version_information.h"
 #include "ur_robot_driver/primary/robot_message/version_message.h"
 #include "ur_robot_driver/rtde/rtde_writer.h"
+#include <functional>
 
 namespace ur_driver
 {
